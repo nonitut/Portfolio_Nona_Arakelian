@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1eb">
+  <meta name="description" content="NONI — дизайн, разработка и цифровые продукты." data-i18n-attr="content" data-i18n="meta.description">
+  <title>NONA ARAKELIAN ® — Digital playground</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.176.0/build/three.module.js"
+      }
+    }
+  </script>
+  <script type="module" src="js/main.js"></script>
+  <script defer src="js/i18n.js"></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topbar candy-bar" id="top">
+    <a class="brand" href="#top" aria-label="NONI — наверх" data-i18n-attr="aria-label" data-i18n="brand.label">NONA ARAKELIAN<span>®</span></a>
+    <a class="topbar-note" href="https://www.linkedin.com/in/%D0%BD%D0%BE%D0%BD%D0%B0-%D0%B0%D1%80%D0%B0%D0%BA%D0%B5%D0%BB%D1%8F%D0%BD-845a231a8/" target="_blank" rel="noreferrer" aria-label="LinkedIn">LinkedIn</a>
+    <nav class="topbar-links" aria-label="Основная навигация" data-i18n-attr="aria-label" data-i18n="nav.label">
+      <div class="language-switcher" role="group" aria-label="Выбрать язык" data-i18n-attr="aria-label" data-i18n="language.label">
+        <button type="button" data-language="ru" aria-pressed="true">RU</button>
+        <button type="button" data-language="en" aria-pressed="false">EN</button>
+      </div>
+      <a href="#work"><span data-i18n="nav.work">Работы</span> <span>↘</span></a>
+      <a class="contact-link" href="https://t.me/incognitolol" target="_blank" rel="noreferrer"><span data-i18n="nav.contact">Написать мне в тг</span> <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section-shell" id="hero">
+      <div class="hero-stage" id="heroStage" aria-label="Интерактивная трёхмерная абстрактная форма" data-i18n-attr="aria-label" data-i18n="hero.stage">
+        <canvas id="heroCanvas"></canvas>
+      </div>
+      <div class="hero-copy">
+        <!-- <p class="eyebrow reveal">DESIGN × CODE × DATA</p> -->
+         
+        <h1 class="hero-title reveal" data-i18n="hero.title">Делаю <span style="color: #d8ed9c;">цифровое</span><br><em>интересным</em></h1>
+        <p class="hero-description reveal" data-i18n="hero.description">Дизайн, разработка и аналитика — соединяю идеи,<br>  людей и технологии в цифровых продуктах.</p>
+      </div>
+
+
+
+      <div class="hero-bottom reveal">
+        <p data-i18n="hero.bottom">Помогаю идеям обрести форму,<br>а продуктам — смысл.</p>
+        <a class="round-link" href="#work" aria-label="Перейти к проектам" data-i18n-attr="aria-label" data-i18n="hero.projects">↓</a>
+        <span class="scroll-label">SCROLL TO EXPLORE</span>
+      </div>
+    </section>
+
+    <img class="work-image" src="./F.svg" alt="">
+
+    <section class="work section-shell" id="work">
+      <div class="section-heading reveal">
+        <div>
+          <h2 data-i18n="work.title">Избранные <em>проекты</em></h2>
+        </div>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+        <a class="project-card project-card--large reveal" href="https://lms.hsedesign.ru/account/tutnoni" target="_blank">
+          <div class="project-visual visual-lilac">
+            <span class="visual-stamp" data-i18n="project.one.stamp">01 / Ссылка на проекты, сделанные под моим кураторством (45 проектов)</span>
+            <div class="mock-browser">
+             <img class="mock-browser-image" src="./F1.png" alt="Мокап браузера с интерфейсом сайта" data-i18n-attr="alt" data-i18n="project.image.alt">
+            </div>
+          </div>
+          <div class="project-info"><div><h3 data-i18n="project.one.title">Посмотреть спецпроекты</h3></div><span class="project-arrow">↗</span></div>
+        </a>
+
+        <a class="project-card project-card--small reveal" href="https://nonitut.github.io/review/" target="_blank">
+          <div class="project-visual visual-blue">
+            <span class="visual-stamp" data-i18n="project.two.stamp">02 / Сайт - Маркетинговое агенство</span>
+            <div class="mock-browser">
+             <img class="mock-browser-image" src="./F2.png" alt="Мокап браузера с интерфейсом сайта" data-i18n-attr="alt" data-i18n="project.image.alt">
+            </div>
+          </div>
+          <div class="project-info"><div><h3 data-i18n="project.two.title">Посмотреть сайт Агенства</h3></div><span class="project-arrow">↗</span></div>
+        </a>
+
+        <a class="project-card project-card--small reveal" href="https://www.figma.com/design/b3Ltt46ApgOnw47mVYhVIw/%D0%9C%D0%92%D0%95%D0%A3-%D0%9C%D0%BE%D0%B1%D0%B8%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B8%D0%B3%D1%80%D1%8B?node-id=410-2&t=4U82Dyf1SQiLWC9b-1" target="_blank">
+          <div class="project-visual visual-pink">
+            <span class="visual-stamp" data-i18n="project.three.stamp">03 / Мобильное приложение - ИГРА</span>
+            <div class="mock-browser">
+             <img class="mock-browser-image" src="./F4.png" alt="Мокап браузера с интерфейсом сайта" data-i18n-attr="alt" data-i18n="project.image.alt">
+            </div>
+          </div>
+          <div class="project-info"><div><h3 data-i18n="project.three.title">Посмотреть дизайн Игры</h3></div><span class="project-arrow">↗</span></div>
+        </a>
+
+        <a class="project-card project-card--large reveal" href="https://github.com/nonitut" target="_blank">
+          <div class="project-visual visual-paper">
+            <span class="visual-stamp" data-i18n="project.four.stamp">04 / Ссылка на GitHub</span>
+            <div class="mock-browser">
+             <img class="mock-browser-image" src="./F3.png" alt="Мокап браузера с интерфейсом сайта" data-i18n-attr="alt" data-i18n="project.image.alt">
+            </div>
+          </div>
+          <div class="project-info"><div><h3 data-i18n="project.four.title">Заценить навыки коддинга</h3></div><span class="project-arrow">↗</span></div>
+        </a>
+      </div>
+    </section>
+
+    <img class="work-i" src="./FB.svg" alt="">
+
+    <footer class="footer section-shell" id="contact">
+    <div class="footer__hero">
+    <div class="footer__content">
+      <h2 class="footer__title" data-i18n="footer.title">
+        <br />
+        Давай сделаем
+        <span>что-то классное</span>
+      </h2>
+
+      <p class="footer__description">
+        <span data-i18n="footer.description">Соединяю дизайн, код и данные,<br>чтобы превращать идеи в работающие продукты</span>
+      </p>
+
+      <a
+        href="https://t.me/incognitolol"
+        class="footer__button"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span data-i18n="footer.contact">Написать мне в тг</span> <span>↗</span>
+      </a>
+    </div>
+
+    <div class="footer__visual">
+      <span class="footer__spark footer__spark--top">✳</span>
+
+      <img
+        class="footer__girl"
+        src="./footer-girl-from-concept.png"
+        alt="Персонаж NONI"
+        data-i18n-attr="alt"
+        data-i18n="footer.character"
+      />
+
+      <span class="footer__spark footer__spark--bottom">✦</span>
+    </div>
+
+
+  </footer>
+    <div class="footer__bottom">
+    <a href="#" class="footer__brand">NONI<span>®</span></a>
+
+    <nav class="footer__links" aria-label="Мои ссылки" data-i18n-attr="aria-label" data-i18n="footer.links">
+      <a
+        href="https://t.me/incognitolol"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Telegram ↗
+      </a>
+
+      <a
+        href="https://github.com/nonitut"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        GitHub ↗
+      </a>
+
+      <a href="mailto:nona.blogg@gmail.com">
+        Email ↗
+      </a>
+    </nav>
+  </div>
+  </main>
+  <script defer src="js/animations.js"></script>
+  <script defer src="js/cursor.js"></script>
+</body>
+</html>

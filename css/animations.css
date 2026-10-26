@@ -1,0 +1,13 @@
+.reveal{opacity:1;transform:translateY(0)}
+.js-ready .reveal{opacity:0;transform:translateY(22px)}
+.js-ready .reveal.is-visible{opacity:1;transform:translateY(0)}
+.project-card{will-change:transform}
+@media (
+    prefers-reduced-motion:reduce){
+        *,*::before,*::after{
+            scroll-behavior:auto!important;
+            animation-duration:.01ms!important;
+            animation-iteration-count:1!important;
+            transition-duration:.01ms!important
+        }
+.js-ready .reveal{opacity:1;transform:none}}
